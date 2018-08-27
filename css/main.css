@@ -50,7 +50,6 @@ body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        width: 12rem;
         margin-right: 0rem; }
         .wrapper .top-bar .user-info .avatar img {
           width: 54px;
@@ -58,21 +57,17 @@ body {
           float: left;
           -webkit-box-align: center;
           -ms-flex-align: center;
-          align-items: center; }
-        .wrapper .top-bar .user-info .avatar p {
-          font-size: 0.9rem;
-          font-weight: 600;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: normal;
-          letter-spacing: 0.1px;
-          color: #767676;
-          float: right;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
           align-items: center;
-          margin-left: 0.8rem;
-          margin-top: 1rem; }
+          margin-right: 2rem; }
+          .wrapper .top-bar .user-info .avatar img .dropdown {
+            background-color: transparent; }
+            .wrapper .top-bar .user-info .avatar img .dropdown .btn .dropdown-toggle {
+              background-color: transparent;
+              border-color: #fff;
+              border-style: solid;
+              border-top: none;
+              border-right: none;
+              border-left: none; }
   .wrapper .above-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -117,7 +112,7 @@ body {
     flex-wrap: nowrap; }
     .wrapper .row #sidebar {
       background-color: #FAFAFA;
-      width: 12rem; }
+      width: 13.92rem; }
       .wrapper .row #sidebar .sidebar-header h3 {
         font-size: 0.7rem;
         font-family: "Open Sans", sans-serif;
@@ -137,7 +132,9 @@ body {
           background-color: #fff3f3;
           color: #000000;
           font-weight: bold;
-          border-left: red solid 2px; }
+          border-left: red solid 2px;
+          width: 180px;
+          border-radius: 4px; }
         .wrapper .row #sidebar .components li .menu-icons {
           margin-right: 1rem;
           width: 15px;
@@ -146,7 +143,7 @@ body {
             color: #000000; }
         .wrapper .row #sidebar .components li a {
           font-family: "Open Sans", sans-serif;
-          font-size: 0.85rem;
+          font-size: 12px;
           font-weight: normal;
           font-style: normal;
           font-stretch: normal;
@@ -157,9 +154,21 @@ body {
           .wrapper .row #sidebar .components li a:hover {
             color: #000000;
             font-weight: bold; }
+      .wrapper .row #sidebar .components .active {
+        border-radius: 0;
+        background-color: #fff3f3;
+        color: #000000;
+        font-weight: bold;
+        border-left: red solid 2px;
+        width: 180px;
+        border-radius: 4px;
+        background-color: #fff3f3; }
+        .wrapper .row #sidebar .components .active a {
+          color: #000000;
+          font-weight: bold; }
     .wrapper .row .content {
       background-color: #fff;
-      width: 57rem;
+      width: 60.25rem;
       border: solid 1px #eeeeee;
       -webkit-box-shadow: 0 2px 4px 0 rgba(184, 184, 184, 0.5);
       box-shadow: 0 2px 4px 0 rgba(184, 184, 184, 0.5);
@@ -247,16 +256,31 @@ body {
               margin-left: 1.4rem;
               margin-top: 0.6rem; }
       .wrapper .row .content .main-data {
-        font-size: 0.75rem;
+        font-size: 0.73rem;
         font-style: "Open Sans", sans-serif;
         text-align: left;
         margin: 0.8rem 0 2rem 0;
         height: auto; }
         .wrapper .row .content .main-data thead tr th {
           border-top: none; }
+        .wrapper .row .content .main-data tbody .colored {
+          background-color: #f4f8ff;
+          border: 1px solid #fff; }
+        .wrapper .row .content .main-data tbody td {
+          border-radius: 4px;
+          border: none; }
         .wrapper .row .content .main-data .btn {
-          font-size: 0.8rem;
-          font-weight: normal; }
+          width: 75px;
+          height: 26px;
+          background-color: #ceddf8;
+          font-family: "Open Sans", sans-serif;
+          font-size: 12px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #000000; }
       .wrapper .row .content .main-pagination {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -278,7 +302,8 @@ body {
       text-align: left;
       margin-top: 2rem;
       padding-left: 1rem;
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      width: 15.8125rem; }
       .wrapper .row .right-bar .right-bar-header h3 {
         font-size: 0.7rem;
         font-family: "Open Sans", sans-serif;
@@ -290,8 +315,10 @@ body {
         letter-spacing: normal;
         color: #767676;
         margin-bottom: 0.9rem; }
-      .wrapper .row .right-bar .data-info form .form-group #trader option {
-        font-size: 0.2rem; }
+      .wrapper .row .right-bar .data-info form .form-group #trader option:checked {
+        color: #aaa; }
+        .wrapper .row .right-bar .data-info form .form-group #trader option:checked:focus {
+          color: red; }
       .wrapper .row .right-bar .data-info form .form-group label {
         font-size: 0.9rem;
         font-weight: 500;
@@ -302,9 +329,11 @@ body {
         color: #212529; }
       .wrapper .row .right-bar .data-info form .form-group input[type=text],
       .wrapper .row .right-bar .data-info form .form-group select {
-        width: 10rem; }
-      .wrapper .row .right-bar select[name=trader] {
-        font-size: 0.2rem; }
+        width: 208px;
+        height: 38px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        border: solid 1px #ced4da; }
       .wrapper .row .right-bar .btn {
         display: block;
         width: 10rem;

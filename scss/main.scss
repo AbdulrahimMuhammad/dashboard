@@ -11,7 +11,7 @@ sans-serif;
 
 @mixin menuItems {
     font-family: $fontDisplay;
-    font-size: 0.85rem;
+    font-size: 12px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -84,33 +84,68 @@ body {
                     color: #767676;
                 }
             }
-            .avatar {
+
+            .avatar{
                 display: flex;
                 justify-content: space-between;
                 width: 10rem;
                 align-items: center;
-                width: 12rem;
                 margin-right: 0rem;
+
                 img {
                     width: 54px;
                     height: 54px;
                     float: left;
                     align-items: center;
+                    margin-right: 2rem;
+
+                    .dropdown{
+                        background-color: transparent;
+                        .btn{
+                            .dropdown-toggle {
+                                background-color: transparent;
+                                border-color: #fff;
+                                border-style: solid;
+                                border-top: none;
+                                border-right: none;
+                                border-left: none;
+                            }
+                        } 
+                        
+     
+                    }
                 }
-                p {
-                    font-size: 0.9rem;
-                    font-weight: 600;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: normal;
-                    letter-spacing: 0.1px;
-                    color: #767676;
-                    float: right;
-                    align-items: center;
-                    margin-left: 0.8rem;
-                    margin-top: 1rem;
-                }
+
             }
+            // .avatar {
+            //     display: flex;
+            //     justify-content: space-between;
+            //     width: 10rem;
+            //     align-items: center;
+            //     width: 12rem;
+            //     margin-right: 0rem;
+            //     img {
+            //         width: 54px;
+            //         height: 54px;
+            //         float: left;
+            //         align-items: center;
+            //         margin-right: 2rem;
+            //     }
+            //     a {
+            //         font-size: 0.9rem;
+            //         font-weight: 600;
+            //         font-style: normal;
+            //         font-stretch: normal;
+            //         line-height: normal;
+            //         letter-spacing: 0.1px;
+            //         color: #767676;
+            //         float: right;
+            //         align-items: center;
+            //         margin-left: 0.8rem;
+            //         margin-top: 1rem;
+            //         text-decoration: none;
+            //     }
+            // }
         }
     }
 
@@ -158,7 +193,7 @@ body {
 
         #sidebar {
             background-color: $lightGrey;
-            width: 12rem;
+            width: 13.92rem;
 
             .sidebar-header {
                 h3 {
@@ -177,6 +212,9 @@ body {
                         color: #000000;
                         font-weight: bold;
                         border-left: red solid 2px;
+                        width: 180px;
+                        border-radius: 4px;
+                        
                     }
                     .menu-icons {
                         @include menuIcons;
@@ -192,11 +230,27 @@ body {
                         }
                     }
                 }
+
+                .active{
+                    border-radius: 0;
+                    background-color: #fff3f3;
+                    color: #000000;
+                    font-weight: bold;
+                    border-left: red solid 2px;
+                    width: 180px;
+                    border-radius: 4px;
+                    background-color: #fff3f3;
+
+                    a{
+                       color: #000000;
+                       font-weight: bold;
+                    }
+                }
             }
         }
         .content {
             background-color: #fff;
-            width: 57rem;
+            width: 60.25rem;
             border: solid 1px #eeeeee;
             box-shadow: 0 2px 4px 0 rgba(184, 184, 184, 0.5);
             margin: 2rem auto 0 auto;
@@ -291,11 +345,12 @@ body {
                 }
             }
             .main-data {
-                font-size: 0.75rem;
+                font-size: 0.73rem;
                 font-style: $fontDisplay;
                 text-align: left;
                 margin: 0.8rem 0 2rem 0;
                 height: auto;
+                
                 thead {
                     tr {
                         th {
@@ -303,9 +358,36 @@ body {
                         }
                     }
                 }
+
+                tbody{
+                    .colored{
+                        background-color: #f4f8ff;
+                        border: 1px solid #fff;
+                    }
+
+                    td{
+                        border-radius: 4px;
+                        border: none;
+                        
+                    }
+
+                }
+                
                 .btn {
-                    font-size: 0.8rem;
+                    width: 75px;
+                    height: 26px;
+                    background-color: #ceddf8;
+                    font-family: $fontDisplay;
+                    font-size: 12px;
                     font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #000000;
+                    .action-text{
+                        
+                    }
                 }
             }
             .main-pagination {
@@ -331,6 +413,7 @@ body {
             margin-top: 2rem;
             padding-left: 1rem;
             padding-right: 1rem;
+            width: 15.8125rem;
 
             .right-bar-header {
                 h3 {
@@ -341,27 +424,31 @@ body {
             .data-info {
                 form {
                     .form-group {
+                         
 
-                        #trader{
-                            option{
-                                font-size: 0.2rem;
-                            }
+                        #trader option:checked {
+                            color: #aaa;
+
+                             &:focus{
+                                 color: red;
+                             }
                         }
                         label {
                             @include label;
                         }
                         input[type=text],
                         select {
-                            width: 10rem;
+                            width: 208px;
+                            height: 38px;
+                            border-radius: 4px;
+                            background-color: #ffffff;
+                            border: solid 1px #ced4da;
                         }
                         
                     }
                 }
             }
 
-            select[name=trader] {
-                font-size: 0.2rem;
-            }
             .btn {
                 display: block;
                 width: 10rem;
