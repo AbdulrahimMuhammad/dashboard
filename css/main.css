@@ -39,12 +39,29 @@ body {
       align-items: center;
       margin-right: 0rem; }
       .wrapper .top-bar .user-info .notification a .bell-icon {
+<<<<<<< HEAD
         text-align: center;
         font-size: 1.6rem;
         margin-right: 1.5rem;
         margin-top: 0.3rem;
+=======
+        text-align: left;
+        font-size: 1.8rem;
+        margin-right: 2rem;
+        margin-top: -0.35rem;
+>>>>>>> 34b951f79e8c03e86cbab55ca0bb317c746435a8
         color: #767676;
-        text-decoration: none; }
+        text-decoration: none;
+        display: block;
+        overflow: hidden; }
+      .wrapper .top-bar .user-info .notification .indicator {
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        background-color: #d0021b;
+        border: solid 1px #ffffff;
+        border-radius: 50%;
+        margin-left: 1rem; }
       .wrapper .top-bar .user-info .avatar {
         display: -webkit-box;
         display: -ms-flexbox;
