@@ -154,6 +154,17 @@ body {
       color: #fff;
       font-size: 0.8rem;
       cursor: pointer; }
+    .wrapper .above-content .modal-btn {
+      width: 118px;
+      height: 38px;
+      border-radius: 18px;
+      border: 1px solid #0648d5;
+      background-color: #0648d5;
+      -webkit-box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
+      box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
+      color: #fff;
+      font-size: 0.8rem;
+      cursor: pointer; }
   .wrapper .row {
     margin: 0;
     display: -webkit-box;
