@@ -276,6 +276,7 @@ body {
                 .before-btn {
                     display: inline;
                     margin-top: 1.5rem;
+                    margin-left: 30rem;
                     .refresh-btn {
                         float: left;
                         margin-right: 2rem;
@@ -484,6 +485,10 @@ body {
     padding: 1.5rem 0 0 0;
     color: grey;
     font-size: 0.8rem;
+}
+
+.dataTables_wrapper{
+    margin-top: 3rem;
 }
 
 }
