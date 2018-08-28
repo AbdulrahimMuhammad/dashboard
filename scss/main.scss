@@ -72,14 +72,25 @@ body {
             .notification {
                 a{
                     .bell-icon {
-                        text-align: center;
-                        font-size: 1.6rem;
-                        margin-right: 1rem;
-                        margin-top: 0.3rem;
+                        text-align: left;
+                        font-size: 1.8rem;
+                        margin-right: 2rem;
+                        margin-top: -0.35rem;
                         color: #767676;
                         text-decoration: none;
+                        display: block;
+                        overflow: hidden;
                     }
-                }            
+                }
+            .indicator {
+                position: absolute;
+                width: 9px;
+                height: 9px;
+                background-color: #d0021b;
+                border: solid 1px #ffffff;
+                border-radius: 50%;
+                margin-left: 1rem;
+            }
             }
             .avatar {
                 display: flex;
