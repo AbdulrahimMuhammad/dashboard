@@ -21,385 +21,405 @@
 </head>
 
 <body>
-        <div class="wrapper">
-            <div class="top-bar">
-                <div class="logo">
-                    <img src="img/logo.png" alt="">
-                </div>
+    <div class="wrapper">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
 
-                <div class="user-info">
-                    <div class=" notification">
+            <div class="user-info">
+                <div class=" notification">
+                    <a href="">
                         <i class="material-icons bell-icon">notifications</i>
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="avatar">
-                        <img src="img/avatar.png" alt="">
-                        
+                <div class="avatar">
+                    <img src="img/avatar.png" alt="">
 
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="" id="" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <a href="#">Abdi Farah </a>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">View profile</a>
-                                <a class="dropdown-item" href="#">log out</a>
-                            </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Abdi Farah
+                            <a href="#">
+                                <i class="material-icons down-icon">expand_more</i>
+                            </a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">My Profile</a>
+                            <a href="#">Log out</a>
                         </div>
                     </div>
-
-                    <!-- <div class=" avatar">
-                        
-                        <a href="#">Abdi Farah</a>
-                        <a href="#"><i class="material-icons">expand_more</i></a>
-                    </div> -->
                 </div>
+
+            </div>
+        </div>
+
+        <div class="above-content">
+            <div class="home">
+                <h6>Home / Warehouse</h6>
             </div>
 
-            <div class="above-content">
-                <div class="home">
-                    <h6>Home / Warehouse</h6>
-                </div>
-            
-                <div class="btn-home">
-                    <button class="button top-btn">Add Warehouse</button>
-                </div>
+            <div class="btn-home">
+                <button class="button top-btn">Add Warehouse</button>
             </div>
+        </div>
 
-            <div class="row">
-                <nav id="sidebar"> <!--SIDE BAR--------------------->
-                    <div class="sidebar-header">
-                        <h3>MENU</h3>
+        <div class="row">
+            <nav id="sidebar">
+                <!--SIDE BAR------------------>
+                <div class="sidebar-header">
+                    <h3>MENU</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#">
+                            <img class="menu-icons" src="icons/baseline-dashboard-24px.svg" alt="">Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <img class="menu-icons" src="icons/warehouse.svg" alt="">Warehouse</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menu-icons" src="icons/list.svg" alt="">Entry Summary</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menu-icons" src="icons/lorry.svg" alt="">Loading Summary</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menu-icons" src="icons/baseline-navigation-24px.svg" alt="">Trips</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menu-icons" src="icons/group.svg" alt="">Traders</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menu-icons" src="icons/equalizer.svg" alt="">Reports</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="menu-icons" src="icons/setting.svg" alt="">Settings</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <!--End of SIDE BAR---------------------->
+
+
+            <section class="content">
+                <!--SECTION CONTENT-------------->
+
+                <div class="before-table">
+                    <div class="before-info">
+                        <p>Showing 1-100 of 102 items</p>
                     </div>
 
-                    <ul class="list-unstyled components">
-                        <li><a href="#"><img class="menu-icons" src="icons/baseline-dashboard-24px.svg" alt="">Dashboard</a></li>
-                        <li class="active"><a href="#"><img class="menu-icons" src="icons/warehouse.svg" alt="">Warehouse</a></li>
-                        <li><a href="#"><img class="menu-icons" src="icons/list.svg" alt="">Entry Summary</a></li>
-                        <li><a href="#"><img class="menu-icons" src="icons/lorry.svg" alt="">Loading Summary</a></li>
-                        <li><a href="#"><img class="menu-icons" src="icons/baseline-navigation-24px.svg" alt="">Trips</a></li>
-                        <li><a href="#"><img class="menu-icons" src="icons/group.svg" alt="">Traders</a></li>
-                        <li><a href="#"><img class="menu-icons" src="icons/equalizer.svg" alt="">Reports</a></li>
-                        <li><a href="#"><img class="menu-icons" src="icons/setting.svg" alt="">Settings</a></li>
-                        
-<!-- <i class="fas fa-tachometer-alt menu-icons"></i>
-<i class="fas fa-warehouse menu-icons"></i>
-<i class="fas fa-file-alt menu-icons"></i>
-<i class="fas fa-truck menu-icons"></i>
-<i class="fas fa-location-arrow menu-icons"></i>
-<i class="fas fa-user-friends menu-icons"></i>
-<i class="far fa-chart-bar menu-icons"></i>
-<i class="fas fa-cog menu-icons"></i> -->
+                    <div class="before-btn">
+                        <div class="refresh-btn">
+                            <i class="material-icons refresh-icon">refresh</i>
+                            <!-- <img class="refresh-img" src="icons/refresh.svg" alt=""> -->
+                        </div>
+                        <div class="publish-btn">
+                            <i class="fas fa-download download"></i>
+                            <i class="fas fa-caret-down down"></i>
+                        </div>
+                        <div class="all-btn">
+                            <p class="all">All</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-striped main-data">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cargo Reference</th>
+                            <th scope="col">Cargo Mode</th>
+                            <th scope="col">Supplier</th>
+                            <th scope="col">Vessel</th>
+                            <th scope="col">Terminal</th>
+                            <th scope="col">Trader</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Actions</th>
 
-                    </ul>
-                </nav>       <!--End of SIDE BAR---------------------->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="colored">
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn dropdown-toggle " type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
+                        <tr class="colored">
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
+                        <tr class="colored">
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
+                        <tr class="colored">
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
+                        <tr class="colored">
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
+                        <tr class="colored">
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
+                        <tr class="colored">
+                            <td>AGOK45/2018</td>
+                            <td>TRANSIT</td>
+                            <td>Langworth-Greenholt</td>
+                            <td>MV AlBERTA ESTATES</td>
+                            <td>Alba Drive</td>
+                            <td>Ankundling LLC</td>
+                            <td>AGO</td>
+                            <td>
+                                <button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+                            </td>
+                        </tr>
 
+                    </tbody>
+                </table>
 
-                <section class="content"> <!--SECTION CONTENT--------------------->
+                <div class="main-pagination">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
-                    <div class="before-table">
-                        <div class="before-info">
-                            <p>Showing 1-100 of 102 items</p>
+            </section>
+            <!--End of SECTION CONTENT------------------>
+
+            <section class="right-bar">
+                <div class="right-bar-header">
+                    <h3>FILTER BY </h3>
+                </div>
+
+                <div class="data-info">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="trader">Trader</label>
+                            <select required class="form-control" id="trader">
+                                <option>Select a trader</option>
+                            </select>
                         </div>
 
-                        <div class="before-btn">
-                            <div class="refresh-btn">
-                                <i class="material-icons refresh-icon">refresh</i>
-                                <!-- <img class="refresh-img" src="icons/refresh.svg" alt=""> -->
-                            </div>
-                            <div class="publish-btn">
-                                <i class="fas fa-download download"></i>
-                                <i class="fas fa-caret-down down"></i>
-                            </div>
-                            <div class="all-btn">
-                                <p class="all">All</p>
-                            </div>
+                        <div class="form-group">
+                            <label for="cargo-ref">Cargo Reference</label>
+                            <input type="text" class="form-control" id="cargo-ref">
                         </div>
-                    </div>
-                    <table class="table table-striped main-data">
-                        <thead>
-                            <tr>
-                                <th scope="col">Cargo Reference</th>
-                                <th scope="col">Cargo Mode</th>
-                                <th scope="col">Supplier</th>
-                                <th scope="col">Vessel</th>
-                                <th scope="col">Terminal</th>
-                                <th scope="col">Trader</th>
-                                <th scope="col">Product</th>
-                                <th scope="col">Actions</th>
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="colored">
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn dropdown-toggle " type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            <tr class="colored">
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            <tr class="colored">
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            <tr class="colored">
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            <tr class="colored">
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            <tr class="colored">
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            <tr class="colored">
-                                <td>AGOK45/2018</td>
-                                <td>TRANSIT</td>
-                                <td>Langworth-Greenholt</td>
-                                <td>MV AlBERTA ESTATES</td>
-                                <td>Alba Drive</td>
-                                <td>Ankundling LLC</td>
-                                <td>AGO</td>
-                                <td><button class="btn btn-primn dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
-                                </td>
-                            </tr>
-                            
-                        </tbody> 
-                    </table>
+                        <div class="form-group">
+                            <label for="cargo-mod">Cargo Mode</label>
+                            <select required class="form-control" id="cargo-mod">
+                                <option>Select a mode</option>
+                            </select>
+                        </div>
 
-                    <div class="main-pagination">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                        <div class="form-group">
+                            <label for="supplier">Supplier</label>
+                            <select required class="form-control" id="supplier">
+                                <option>Select a supplier</option>
+                            </select>
+                        </div>
 
-                </section>        <!--End of SECTION CONTENT--------------------->
+                        <div class="form-group">
+                            <label for="vessel">Vessel</label>
+                            <select required class="form-control" id="vessel">
+                                <option>Select a vessel</option>
+                            </select>
+                        </div>
 
-                <section class="right-bar"> <!--RIGHT BAR--------------------->
-                    <div class="right-bar-header"> 
-                        <h3>FILTER BY </h3>
-                    </div> 
+                        <div class="form-group">
+                            <label for="consignee">Consignee</label>
+                            <select required class="form-control" id="consignee">
+                                <option>Select a consignee</option>
+                            </select>
+                        </div>
 
-                    <div class="data-info">
-                        <form action="#">
-                            <div class="form-group">
-                                <label for="trader">Trader</label>
-                                <select required class="form-control" id="trader">
-                                    <option value="">Select a trader</option>
-                                    <option>Selct</option>
-                                    <option>Selct</option>
-                                </select>
-                            </div>
+                        <div class="form-group">
+                            <label for="discharge">Discharge Terminal</label>
+                            <select required class="form-control" id="discharge">
+                                <option>Select a discharge</option>
+                            </select>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="cargo-ref">Cargo Reference</label>
-                                <input type="text" class="form-control" id="cargo-ref">
-                            </div>
+                        <div class="form-group">
+                            <label for="product">Product</label>
+                            <select required class="form-control" id="product">
+                                <option>Select a product</option>
+                            </select>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="cargo-mod">Cargo Mode</label>
-                                <select required class="form-control" id="cargo-mod">
-                                    <option value="">Select a mode</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </select>
-                            </div>
+                        <div class="form-group">
+                            <label for="destinantion">Destinantion Country</label>
+                            <select required class="form-control" id="destinantion">
+                                <option>Select a country</option>
+                            </select>
+                        </div>
+                    </form>
 
-                            <div class="form-group">
-                                <label for="supplier">Supplier</label>
-                                <select required class="form-control" id="supplier">
-                                    <option value="">Select a supplier</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </select>
-                            </div>
+                    <button type="submit" class="btn btn-success">Filter</button>
+                    <button type="submit" class="btn btn-light">Reset</button>
 
-                            <div class="form-group">
-                                <label for="vessel">Vessel</label>
-                                <select required class="form-control" id="vessel">
-                                    <option value="">Select a vessel</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="consignee">Consignee</label>
-                                <select required class="form-control" id="consignee">
-                                    <option value="">Select a consignee</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="discharge">Discharge Terminal</label>
-                                <select required class="form-control" id="discharge">
-                                    <option value="">Select a terminal</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="product">Product</label>
-                                <select required class="form-control" id="product">
-                                    <option value="">Select a product</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="destinantion">Destinantion Country</label>
-                                <select required class="form-control" id="destinantion">
-                                    <option class="option-place" value="">Select a country</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </select>
-                            </div>
-                        </form>
-
-                        <button type="submit" class="btn btn-success">Filter</button>
-                        <button type="submit" class="btn btn-light">Reset</button>
-
-                    </div>
-                </section>   <!--End of RIGHT BAR--------------------->
-
-            </div>
-
-            <div class="copyright">
-                <p>DW LOGISTICS &copy; 2018</p>
-            </div>
+                </div>
+            </section>
 
         </div>
+
+        <div class="copyright">
+            <p>DW LOGISTICS &copy; 2018</p>
+        </div>
+
+    </div>
     <!-- Optional JavaScript -->
     <script src="js/main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -410,15 +430,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-

@@ -5,8 +5,7 @@ sans-serif;
 @mixin menuIcons {
     margin-right: 1rem;
     width: 15px;
-    height: 15px;
-    // background-color: #767676;
+    height: 15px; // background-color: #767676;
 }
 
 @mixin menuItems {
@@ -41,7 +40,6 @@ sans-serif;
     line-height: normal;
     letter-spacing: normal;
     color: #212529;
-    
 }
 
 * {
@@ -57,14 +55,12 @@ body {
 .wrapper {
     background-color: $lightGrey;
     width: 100%;
-
     .top-bar {
         width: 100%;
         box-shadow: 0 7px 9px 0 rgba(240, 240, 240, 0.5);
         background-color: #fff;
         display: flex;
         justify-content: space-between;
-
         .logo {
             padding: 1rem;
             float: left;
@@ -73,92 +69,89 @@ body {
             display: flex;
             align-items: center;
             margin-right: 0rem;
-            width: 18rem;
             .notification {
-
-                .bell-icon {
-                    text-align: center;
-                    font-size: 1.4rem;
-                    margin-right: 1rem;
-                    margin-top: 0.3rem;
-                    color: #767676;
-                }
+                a{
+                    .bell-icon {
+                        text-align: center;
+                        font-size: 1.6rem;
+                        margin-right: 1rem;
+                        margin-top: 0.3rem;
+                        color: #767676;
+                        text-decoration: none;
+                    }
+                }            
             }
-
-            .avatar{
+            .avatar {
                 display: flex;
                 justify-content: space-between;
-                width: 10rem;
                 align-items: center;
-                margin-right: 0rem;
-
+                margin-right: -1rem;
+                margin-right: 0;
                 img {
                     width: 54px;
                     height: 54px;
                     float: left;
                     align-items: center;
-                    margin-right: 2rem;
-
-                    .dropdown{
-                        background-color: transparent;
-                        .btn{
-                            .dropdown-toggle {
-                                background-color: transparent;
-                                border-color: #fff;
-                                border-style: solid;
-                                border-top: none;
-                                border-right: none;
-                                border-left: none;
-                            }
-                        } 
-                        
-     
-                    }
+                    margin-right: 1rem;
                 }
-
+                .dropbtn {
+                    background-color: transparent;
+                    cursor: pointer;
+                    font-family: $fontDisplay;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 0.1px;
+                    text-align: left;
+                    color: #767676;
+                    width: 9rem;
+                    border: none;
+                }
+                .down-icon {
+                    float: right;
+                    margin-top: -0.1rem;
+                    text-align: center;
+                    margin-right: 2.2rem;
+                    text-decoration: none;
+                    color: #767676;
+                }
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1
+                }
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
             }
-            // .avatar {
-            //     display: flex;
-            //     justify-content: space-between;
-            //     width: 10rem;
-            //     align-items: center;
-            //     width: 12rem;
-            //     margin-right: 0rem;
-            //     img {
-            //         width: 54px;
-            //         height: 54px;
-            //         float: left;
-            //         align-items: center;
-            //         margin-right: 2rem;
-            //     }
-            //     a {
-            //         font-size: 0.9rem;
-            //         font-weight: 600;
-            //         font-style: normal;
-            //         font-stretch: normal;
-            //         line-height: normal;
-            //         letter-spacing: 0.1px;
-            //         color: #767676;
-            //         float: right;
-            //         align-items: center;
-            //         margin-left: 0.8rem;
-            //         margin-top: 1rem;
-            //         text-decoration: none;
-            //     }
-            // }
         }
     }
-
     .above-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: nowrap;
         background-color: $lightGrey;
-        width: 57rem;
-        margin: 3rem auto 0 11.8rem;
-
-
+        width: 55rem;
+        margin: 3rem auto 0 13.7rem;
         .home {
             h6 {
                 font-size: .9rem;
@@ -185,16 +178,13 @@ body {
             }
         }
     }
-
     .row {
         margin: 0;
         display: flex;
         flex-wrap: nowrap;
-
         #sidebar {
             background-color: $lightGrey;
-            width: 13.92rem;
-
+            width: 14.92rem;
             .sidebar-header {
                 h3 {
                     @include h3;
@@ -205,16 +195,15 @@ body {
                 li {
                     padding: 1rem 1rem 1rem 1.5rem;
                     text-align: left;
-
                     &:hover {
-                        border-radius: 0;
                         background-color: #fff3f3;
                         color: #000000;
                         font-weight: bold;
                         border-left: red solid 2px;
-                        width: 180px;
                         border-radius: 4px;
-                        
+                        width: 190px;
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
                     }
                     .menu-icons {
                         @include menuIcons;
@@ -230,20 +219,20 @@ body {
                         }
                     }
                 }
-
-                .active{
+                .active {
                     border-radius: 0;
                     background-color: #fff3f3;
                     color: #000000;
                     font-weight: bold;
                     border-left: red solid 2px;
-                    width: 180px;
+                    width: 190px;
                     border-radius: 4px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
                     background-color: #fff3f3;
-
-                    a{
-                       color: #000000;
-                       font-weight: bold;
+                    a {
+                        color: #000000;
+                        font-weight: bold;
                     }
                 }
             }
@@ -255,7 +244,6 @@ body {
             box-shadow: 0 2px 4px 0 rgba(184, 184, 184, 0.5);
             margin: 2rem auto 0 auto;
             height: auto;
-
             .before-table {
                 display: flex;
                 justify-content: flex-end;
@@ -274,11 +262,9 @@ body {
                         padding: 1rem 0 0 0.8rem;
                     }
                 }
-
                 .before-btn {
                     display: inline;
                     margin-top: 1.5rem;
-
                     .refresh-btn {
                         float: left;
                         margin-right: 2rem;
@@ -288,12 +274,10 @@ body {
                         box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
                         border: solid 1px #ededed;
                         cursor: pointer;
-
                         .refresh-icon {
                             font-size: 1.5rem;
                             color: #0648d5;
-                            transform:translateX(1.2rem) translateY(0.45rem);
-
+                            transform: translateX(1.2rem) translateY(0.45rem);
                         }
                     }
                     .publish-btn {
@@ -307,7 +291,6 @@ body {
                         border: solid 1px #ededed;
                         position: relative;
                         cursor: pointer;
-
                         .download {
                             color: #0648d5;
                             font-size: 1.1rem;
@@ -325,7 +308,6 @@ body {
                         box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
                         border: solid 1px #ededed;
                         cursor: pointer;
-
                         .all {
                             width: 13px;
                             height: 14px;
@@ -339,7 +321,6 @@ body {
                             color: #000000;
                             margin-left: 1.4rem;
                             margin-top: 0.6rem;
-
                         }
                     }
                 }
@@ -350,32 +331,33 @@ body {
                 text-align: left;
                 margin: 0.8rem 0 2rem 0;
                 height: auto;
-                
                 thead {
                     tr {
                         th {
                             border-top: none;
+                            border-bottom: none;
+                            text-align: center;
                         }
                     }
                 }
-
-                tbody{
-                    .colored{
+                tbody {
+                    margin: 0 0.5rem;
+                    height: 46px;
+                    border-radius: 4px;
+                    text-align: center;
+                    .colored {
                         background-color: #f4f8ff;
                         border: 1px solid #fff;
                     }
-
-                    td{
+                    td {
                         border-radius: 4px;
                         border: none;
-                        
+                        text-align: center;
+                        transform: translateY(0.3rem);
                     }
-
                 }
-                
-                .btn {
+                .dropdown-toggle {
                     width: 75px;
-                    height: 26px;
                     background-color: #ceddf8;
                     font-family: $fontDisplay;
                     font-size: 12px;
@@ -385,8 +367,21 @@ body {
                     line-height: normal;
                     letter-spacing: normal;
                     color: #000000;
-                    .action-text{
-                        
+                    text-align: center;
+                    transform: translateY(-0.3rem);
+                    &::after {
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        margin-left: .5em;
+                        margin-top: .3em;
+                        vertical-align: .255em;
+                        content: "";
+                        border-top: .3em solid;
+                        border-right: .3em solid transparent;
+                        border-bottom: 0;
+                        border-left: .3em solid transparent;
+                        font-size: .7rem;
                     }
                 }
             }
@@ -407,14 +402,12 @@ body {
                 }
             }
         }
-
         .right-bar {
             text-align: left;
             margin-top: 2rem;
             padding-left: 1rem;
             padding-right: 1rem;
             width: 15.8125rem;
-
             .right-bar-header {
                 h3 {
                     @include h3;
@@ -422,47 +415,54 @@ body {
                 }
             }
             .data-info {
-                form {
-                    .form-group {
-                         
-
-                        #trader option:checked {
-                            color: #aaa;
-
-                             &:focus{
-                                 color: red;
-                             }
-                        }
-                        label {
-                            @include label;
-                        }
-                        input[type=text],
-                        select {
-                            width: 208px;
-                            height: 38px;
-                            border-radius: 4px;
-                            background-color: #ffffff;
-                            border: solid 1px #ced4da;
-                        }
-                        
+                margin: 0 0.2rem;
+                .form-group {
+                    .form-control {
+                        display: block;
+                        width: 200px;
+                        height: 35px;
+                        height: calc(2.25rem + 2px);
+                        padding: .375rem .75rem;
+                        font-size: .8rem;
+                        color: #868e96;
+                        font-family: $fontDisplay;
+                        line-height: 1.5;
+                        color: #495057;
+                        background-color: #fff;
+                        background-clip: padding-box;
+                        border: 1px solid #ced4da;
+                        border-radius: .25rem;
+                        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
                     }
+
+                label {
+                    @include label;
+                }
+                input[type=text],
+                select {
+                    height: 38px;
+                    width: 200px;
+                    border-radius: 4px;
+                    background-color: #ffffff;
+                    border: solid 1px #ced4da;
+                    text-align: center;
                 }
             }
-
-            .btn {
-                display: block;
-                width: 10rem;
-                margin-bottom: 1rem;
-                
-            }
-            .btn-success {
-                margin-top: 2rem;
-            }
-            .btn-light {
-                background-color: #f3f3f3;
-                color: blue;
-            }
         }
+        .btn {
+            display: block;
+            margin-bottom: 1rem;
+            width: 208px;
+            height: 38px;
+        }
+        .btn-success {
+            margin-top: 2rem;
+        }
+        .btn-light {
+            background-color: #f3f3f3;
+            color: blue;
+        }
+    }
 }
 
 .copyright {
@@ -475,59 +475,4 @@ body {
     font-size: 0.8rem;
 }
 
-}
-
-// MEDIA QUERIES********************
-@media (max-width: 768px) {
-    /* 80px and its content aligned to centre. Pushing it off the screen with the
-       negative left margin
-    */
-    #sidebar.active {
-        min-width: 80px;
-        max-width: 80px;
-        text-align: center;
-        margin-left: -80px !important;
-    }
-    /* Reappearing the sidebar on toggle button click */
-    #sidebar {
-        margin-left: 0;
-    }
-    /* Toggling the sidebar header content, 
-       hide the big heading [h3] and showing the small heading [strong] and vice versa
-    */
-    #sidebar .sidebar-header strong {
-        display: none;
-    }
-    #sidebar.active .sidebar-header h3 {
-        display: none;
-    }
-    #sidebar.active .sidebar-header strong {
-        display: block;
-    }
-    /* Downsize the navigation links font size */
-    #sidebar.active ul li a {
-        padding: 20px 10px;
-        font-size: 0.85em;
-    }
-    #sidebar.active ul li a i {
-        margin-right: 0;
-        display: block;
-        font-size: 1.8em;
-        margin-bottom: 5px;
-    }
-    /* Adjust the dropdown links padding*/
-    #sidebar.active ul ul a {
-        padding: 10px !important;
-    }
-    /* Changing the arrow position to bottom center position, 
-      translateX(50%) works with right: 50% 
-      to accurately  center the arrow */
-    .dropdown-toggle::after {
-        top: auto;
-        bottom: 10px;
-        right: 50%;
-        -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-        transform: translateX(50%);
-    }
 }
