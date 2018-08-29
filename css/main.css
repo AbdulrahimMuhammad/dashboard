@@ -208,6 +208,8 @@ body {
           .wrapper .row #sidebar .components li a:hover {
             color: #000000;
             font-weight: bold; }
+        .wrapper .row #sidebar .components li .reports {
+          margin-right: 3rem; }
       .wrapper .row #sidebar .components .active {
         border-radius: 0;
         background-color: #fff3f3;

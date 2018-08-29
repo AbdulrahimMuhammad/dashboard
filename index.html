@@ -13,6 +13,7 @@
     <!--Custom CSS  -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/collapsed.scss">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
@@ -128,14 +129,26 @@
                         <a href="#">
                             <img class="menu-icons" src="icons/group.svg" alt="">Traders</a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <img class="menu-icons" src="icons/equalizer.svg" alt="">Reports</a>
+                    <li data-toggle="collapse" data-target="#reports" class="collapsed">
+<a href="#"><img class="menu-icons" src="icons/equalizer.svg" alt=""><span class="reports">Reports</span></a><span
+    class="report-icon"><i class="accordion-icon fa fa-angle-right"></i></span>
                     </li>
-                    <li>
-                        <a href="#">
-                            <img class="menu-icons" src="icons/setting.svg" alt="">Settings</a>
+                    <ul class="sub-menu collapse" id="reports">
+                        <li><a href="#">CSS3 Animation</a></li>
+                        <li><a href="#">General</a></li>
+                        <li><a href="#">Buttons</a></li>
+                    </ul>
+
+                    <li data-toggle="collapse" data-target="#settings" class="collapsed">
+<a href="#"><img class="menu-icons" src="icons/setting.svg" alt=""><span class="reports">Settings</span></a><span class="report-icon"><i
+        class="accordion-icon fa fa-angle-right"></i></span>
                     </li>
+                    <ul class="sub-menu collapse" id="settings">
+                        <li><a href="#">CSS3 Animation</a></li>
+                        <li><a href="#">General</a></li>
+                        <li><a href="#">Buttons</a></li>
+                    </ul>
+
 
                 </ul>
             </nav>
