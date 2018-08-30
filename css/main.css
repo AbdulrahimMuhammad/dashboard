@@ -209,7 +209,14 @@ body {
             color: #000000;
             font-weight: bold; }
         .wrapper .row #sidebar .components li .reports {
-          margin-right: 3rem; }
+          margin-right: 4rem;
+          cursor: pointer; }
+        .wrapper .row #sidebar .components li .report-icon {
+          cursor: pointer;
+          color: #767676; }
+          .wrapper .row #sidebar .components li .report-icon .material-icons {
+            font-size: 1.2rem;
+            margin-top: 0.5rem; }
       .wrapper .row #sidebar .components .active {
         border-radius: 0;
         margin-top: 0.4rem;
