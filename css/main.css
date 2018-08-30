@@ -129,11 +129,9 @@ body {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     background-color: #FAFAFA;
-    width: 56rem;
-    -webkit-transform: translateX(23.2%);
-    -ms-transform: translateX(23.2%);
-    transform: translateX(23.2%);
-    margin: 40px 0 6px 0; }
+    width: 65.8%;
+    margin-top: 3%;
+    margin-left: 15.5%; }
     .wrapper .above-content .home h6 {
       font-size: .9rem;
       font-weight: normal;
@@ -209,7 +207,7 @@ body {
             color: #000000;
             font-weight: bold; }
         .wrapper .row #sidebar .components li .reports {
-          margin-right: 4rem;
+          margin-right: 3.5rem;
           cursor: pointer; }
         .wrapper .row #sidebar .components li .report-icon {
           cursor: pointer;
@@ -251,7 +249,8 @@ body {
         justify-content: flex-end;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+        margin-bottom: -1rem; }
         .wrapper .row .content .before-table .before-info p {
           font-family: SFProDisplay;
           font-size: 0.9rem;
@@ -267,7 +266,7 @@ body {
         .wrapper .row .content .before-table .before-btn {
           display: inline;
           margin-top: 1.5rem;
-          margin-left: -0.3rem; }
+          margin-right: -.7rem; }
           .wrapper .row .content .before-table .before-btn .refresh-btn {
             float: left;
             margin-right: 2rem;
@@ -329,9 +328,7 @@ body {
         font-style: "Open Sans", sans-serif;
         text-align: left;
         margin: 0.8rem 0 2rem 0;
-        height: auto;
-        position: relative;
-        z-index: 10000; }
+        height: auto; }
         .wrapper .row .content .main-data thead tr th {
           border-top: none;
           border-bottom: none;
@@ -407,7 +404,8 @@ body {
     .wrapper .row .right-bar {
       text-align: left;
       margin-top: 2rem;
-      margin-left: 1.5rem;
+      margin-left: 1rem;
+      margin-right: 0.8rem;
       width: 15.8125rem; }
       .wrapper .row .right-bar .right-bar-header h3 {
         font-size: 0.7rem;

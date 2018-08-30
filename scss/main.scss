@@ -184,9 +184,9 @@ body {
         align-items: center;
         flex-wrap: nowrap;
         background-color: $lightGrey;
-        width: 56rem;
-        transform: translateX(23.2%);
-        margin: 40px 0 6px 0;
+        width: 65.8%;
+        margin-top: 3%;
+        margin-left: 15.5%;
         .home {
             h6 {
                 font-size: .9rem;
@@ -265,7 +265,7 @@ body {
                     }
 
                     .reports {
-                        margin-right: 4rem;
+                        margin-right: 3.5rem;
                         cursor: pointer;
                     }
 
@@ -314,6 +314,7 @@ body {
                 display: flex;
                 justify-content: flex-end;
                 justify-content: space-between;
+                margin-bottom: -1rem;
 
                 .before-info {
                     p {
@@ -334,7 +335,7 @@ body {
                 .before-btn {
                     display: inline;
                     margin-top: 1.5rem;
-                    margin-left: -0.3rem;
+                    margin-right: -.7rem;
                     
                     .refresh-btn {
                         float: left;
@@ -407,10 +408,7 @@ body {
                 text-align: left;
                 margin: 0.8rem 0 2rem 0;
                 height: auto;
-                position: relative;
-                z-index: 10000;
                 
-
                 thead {
                     tr {
                         th {
@@ -504,7 +502,8 @@ body {
         .right-bar {
             text-align: left;
             margin-top: 2rem;
-            margin-left: 1.5rem;
+            margin-left: 1rem;
+            margin-right: 0.8rem;
             width: 15.8125rem;
 
             .right-bar-header {
