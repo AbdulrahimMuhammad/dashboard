@@ -176,7 +176,8 @@ body {
     flex-wrap: nowrap; }
     .wrapper .row #sidebar {
       background-color: #FAFAFA;
-      width: 14.92rem; }
+      width: 14.92rem;
+      margin-right: 0.7rem; }
       .wrapper .row #sidebar .sidebar-header h3 {
         font-size: 0.7rem;
         font-family: "Open Sans", sans-serif;
@@ -222,7 +223,7 @@ body {
             color: #000000;
             font-weight: bold; }
         .wrapper .row #sidebar .components li .reports {
-          margin-right: 3.5rem;
+          margin-right: 3rem;
           cursor: pointer; }
         .wrapper .row #sidebar .components li .report-icon {
           cursor: pointer;
@@ -339,11 +340,12 @@ body {
               margin-left: 1.4rem;
               margin-top: 0.6rem; }
       .wrapper .row .content .main-data {
-        font-size: 0.69rem;
+        font-size: 0.72rem;
         font-style: "Open Sans", sans-serif;
         text-align: left;
         margin: 0.8rem 0 2rem 0;
-        height: auto; }
+        height: auto;
+        width: 55rem; }
         .wrapper .row .content .main-data thead tr th {
           border-top: none;
           border-bottom: none;
@@ -421,7 +423,7 @@ body {
       margin-top: 2rem;
       margin-left: 1rem;
       margin-right: 0.8rem;
-      width: 15.8125rem; }
+      width: 15.3rem; }
       .wrapper .row .right-bar .right-bar-header h3 {
         font-size: 0.7rem;
         font-family: "Open Sans", sans-serif;

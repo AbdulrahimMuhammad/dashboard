@@ -249,6 +249,7 @@ body {
         #sidebar {
             background-color: $lightGrey;
             width: 14.92rem;
+            margin-right: 0.7rem;
 
             .sidebar-header {
                 h3 {
@@ -289,7 +290,7 @@ body {
                     }
 
                     .reports {
-                        margin-right: 3.5rem;
+                        margin-right: 3rem;
                         cursor: pointer;
                     }
 
@@ -428,11 +429,12 @@ body {
             }
 
             .main-data {
-                font-size: 0.69rem;
+                font-size: 0.72rem;
                 font-style: $fontDisplay;
                 text-align: left;
                 margin: 0.8rem 0 2rem 0;
                 height: auto;
+                width: 55rem;
 
                 thead {
                     tr {
@@ -529,7 +531,7 @@ body {
             margin-top: 2rem;
             margin-left: 1rem;
             margin-right: 0.8rem;
-            width: 15.8125rem;
+            width: 15.3rem;
 
             .right-bar-header {
                 h3 {
