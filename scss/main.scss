@@ -69,10 +69,10 @@ body {
             width: 93px;
             height: 29.2px;
             margin-left: 2.06rem;
-            margin-top: 2rem;
-            margin-bottom: 1.7rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
 
-            img{
+            img {
                 width: 100%;
             }
         }
@@ -95,15 +95,16 @@ body {
                         overflow: hidden;
                     }
                 }
-            .indicator {
-                position: absolute;
-                width: 9px;
-                height: 9px;
-                background-color: #d0021b;
-                border: solid 1px #ffffff;
-                border-radius: 50%;
-                margin-left: 1rem;
-            }
+
+                .indicator {
+                    position: absolute;
+                    width: 9px;
+                    height: 9px;
+                    background-color: #d0021b;
+                    border: solid 1px #ffffff;
+                    border-radius: 50%;
+                    margin-left: 1rem;
+                }
             }
 
             .avatar {
@@ -187,6 +188,7 @@ body {
         width: 65.8%;
         margin-top: 3%;
         margin-left: 15.5%;
+
         .home {
             h6 {
                 font-size: .9rem;
@@ -212,10 +214,32 @@ body {
                 font-size: 0.8rem;
                 cursor: pointer;
             }
-
         }
-
     }
+
+    .main-modal {
+            .modal-footer {
+                .top-btn {
+                    width: 118px;
+                    height: 38px;
+                    border-radius: 18px;
+                    border: 1px solid #0648d5;
+                    background-color: #0648d5;
+                    box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
+                    color: #fff;
+                    font-size: 0.8rem;
+                    cursor: pointer;
+
+                    &:first-child{
+                        width: 115px;
+                        background-color: #d0021b;
+                        border: #d0021b 1px solid;
+                    }
+                }
+
+
+            }
+        }
 
     .row {
         margin: 0;
@@ -269,10 +293,11 @@ body {
                         cursor: pointer;
                     }
 
-                    .report-icon{
+                    .report-icon {
                         cursor: pointer;
                         color: #767676;
-                        .material-icons{
+
+                        .material-icons {
                             font-size: 1.2rem;
                             margin-top: 0.5rem;
                         }
@@ -336,7 +361,7 @@ body {
                     display: inline;
                     margin-top: 1.5rem;
                     margin-right: -.7rem;
-                    
+
                     .refresh-btn {
                         float: left;
                         margin-right: 2rem;
@@ -408,7 +433,7 @@ body {
                 text-align: left;
                 margin: 0.8rem 0 2rem 0;
                 height: auto;
-                
+
                 thead {
                     tr {
                         th {
@@ -424,7 +449,7 @@ body {
                     height: 46px;
                     border-radius: 4px;
                     text-align: center;
-                    
+
                     .colored {
                         background-color: #f4f8ff;
                         border: 1px solid #fff;
@@ -434,7 +459,7 @@ body {
                         border-radius: 4px;
                         border: none;
                         text-align: center;
-                        transform: translateY(0.3rem);  
+                        transform: translateY(0.3rem);
                     }
 
                     .dropdown-toggle {
@@ -451,7 +476,7 @@ body {
                         text-align: center;
                         transform: translateY(-0.3rem);
                         border: none;
-    
+
                         &::after {
                             display: inline-block;
                             width: 0;
@@ -464,11 +489,11 @@ body {
                             border-right: .3em solid transparent;
                             border-bottom: 0;
                             border-left: .3em solid transparent;
-                            font-size: .7rem;                          
+                            font-size: .7rem;
                         }
                     }
 
-                    .dropdown-item{
+                    .dropdown-item {
                         width: 50%;
                         padding: 0.25rem 0.5rem;
                         font-size: .9rem;
@@ -476,7 +501,7 @@ body {
                         visibility: visible;
                         z-index: 1;
                     }
-                }  
+                }
             }
 
             .main-pagination {
@@ -579,7 +604,7 @@ body {
         font-size: 0.8rem;
     }
 
-    .dataTables_wrapper{
+    .dataTables_wrapper {
         margin-top: 2.5rem;
         font-size: 0.9rem;
     }

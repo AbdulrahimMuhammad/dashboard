@@ -26,8 +26,8 @@ body {
       width: 93px;
       height: 29.2px;
       margin-left: 2.06rem;
-      margin-top: 2rem;
-      margin-bottom: 1.7rem; }
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
       .wrapper .top-bar .logo img {
         width: 100%; }
     .wrapper .top-bar .user-info {
@@ -152,6 +152,21 @@ body {
       color: #fff;
       font-size: 0.8rem;
       cursor: pointer; }
+  .wrapper .main-modal .modal-footer .top-btn {
+    width: 118px;
+    height: 38px;
+    border-radius: 18px;
+    border: 1px solid #0648d5;
+    background-color: #0648d5;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer; }
+    .wrapper .main-modal .modal-footer .top-btn:first-child {
+      width: 115px;
+      background-color: #d0021b;
+      border: #d0021b 1px solid; }
   .wrapper .row {
     margin: 0;
     display: -webkit-box;
