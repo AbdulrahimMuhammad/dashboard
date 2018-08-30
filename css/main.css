@@ -176,8 +176,7 @@ body {
     flex-wrap: nowrap; }
     .wrapper .row #sidebar {
       background-color: #FAFAFA;
-      width: 14.92rem;
-      margin-right: 0.7rem; }
+      width: 14.92rem; }
       .wrapper .row #sidebar .sidebar-header h3 {
         font-size: 0.7rem;
         font-family: "Open Sans", sans-serif;
@@ -223,7 +222,7 @@ body {
             color: #000000;
             font-weight: bold; }
         .wrapper .row #sidebar .components li .reports {
-          margin-right: 3rem;
+          margin-right: 3.5rem;
           cursor: pointer; }
         .wrapper .row #sidebar .components li .report-icon {
           cursor: pointer;
@@ -340,12 +339,11 @@ body {
               margin-left: 1.4rem;
               margin-top: 0.6rem; }
       .wrapper .row .content .main-data {
-        font-size: 0.72rem;
+        font-size: 0.69rem;
         font-style: "Open Sans", sans-serif;
         text-align: left;
         margin: 0.8rem 0 2rem 0;
-        height: auto;
-        width: 55rem; }
+        height: auto; }
         .wrapper .row .content .main-data thead tr th {
           border-top: none;
           border-bottom: none;
@@ -395,12 +393,8 @@ body {
               border-left: .3em solid transparent;
               font-size: .7rem; }
           .wrapper .row .content .main-data tbody .dropdown-item {
-            width: 50%;
-            padding: 0.25rem 0.5rem;
             font-size: .9rem;
-            position: relative;
-            visibility: visible;
-            z-index: 1; }
+            padding: 50rem; }
       .wrapper .row .content .main-pagination {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -423,7 +417,7 @@ body {
       margin-top: 2rem;
       margin-left: 1rem;
       margin-right: 0.8rem;
-      width: 15.3rem; }
+      width: 15.8125rem; }
       .wrapper .row .right-bar .right-bar-header h3 {
         font-size: 0.7rem;
         font-family: "Open Sans", sans-serif;

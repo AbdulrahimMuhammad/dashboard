@@ -249,7 +249,6 @@ body {
         #sidebar {
             background-color: $lightGrey;
             width: 14.92rem;
-            margin-right: 0.7rem;
 
             .sidebar-header {
                 h3 {
@@ -290,7 +289,7 @@ body {
                     }
 
                     .reports {
-                        margin-right: 3rem;
+                        margin-right: 3.5rem;
                         cursor: pointer;
                     }
 
@@ -429,12 +428,11 @@ body {
             }
 
             .main-data {
-                font-size: 0.72rem;
+                font-size: 0.69rem;
                 font-style: $fontDisplay;
                 text-align: left;
                 margin: 0.8rem 0 2rem 0;
                 height: auto;
-                width: 55rem;
 
                 thead {
                     tr {
@@ -496,12 +494,9 @@ body {
                     }
 
                     .dropdown-item {
-                        width: 50%;
-                        padding: 0.25rem 0.5rem;
                         font-size: .9rem;
-                        position: relative;
-                        visibility: visible;
-                        z-index: 1;
+                        padding: 50rem;
+
                     }
                 }
             }
@@ -531,7 +526,7 @@ body {
             margin-top: 2rem;
             margin-left: 1rem;
             margin-right: 0.8rem;
-            width: 15.3rem;
+            width: 15.8125rem;
 
             .right-bar-header {
                 h3 {
