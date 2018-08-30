@@ -128,15 +128,25 @@
                         <a href="#">
                             <img class="menu-icons" src="icons/group.svg" alt="">Traders</a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <img class="menu-icons" src="icons/equalizer.svg" alt="">Reports</a>
-
+                    <li data-toggle="collapse" data-target="#reports" class="collapsed">
+                        <a href="#"><img class="menu-icons" src="icons/equalizer.svg" alt=""><span class="reports">Reports</span></a><span class="report-icon"><i
+                                class="accordion-icon fa fa-angle-right"></i></span>
                     </li>
-                    <li>
-                        <a href="#">
-                            <img class="menu-icons" src="icons/setting.svg" alt="">Settings</a>
+                    <ul class="sub-menu collapse" id="reports">
+                        <li><a href="#">CSS3 Animation</a></li>
+                        <li><a href="#">General</a></li>
+                        <li><a href="#">Buttons</a></li>
+                    </ul>
+                    
+                    <li data-toggle="collapse" data-target="#settings" class="collapsed">
+                        <a href="#"><img class="menu-icons" src="icons/setting.svg" alt=""><span class="reports">Settings</span></a><span class="report-icon"><i
+                                class="accordion-icon fa fa-angle-right"></i></span>
                     </li>
+                    <ul class="sub-menu collapse" id="settings">
+                        <li><a href="#">CSS3 Animation</a></li>
+                        <li><a href="#">General</a></li>
+                        <li><a href="#">Buttons</a></li>
+                    </ul>
 
                 </ul>
             </nav>
