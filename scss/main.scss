@@ -1,47 +1,8 @@
+@import "mixins";
 $lightGrey: #FAFAFA;
 $lightBlue: #f4f8ff;
 $fontDisplay: 'Open Sans',
 sans-serif;
-
-@mixin menuIcons {
-    margin-right: 1rem;
-    width: 15px;
-    height: 15px; // background-color: #767676;
-}
-
-@mixin menuItems {
-    font-family: $fontDisplay;
-    font-size: 13px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 0.1px;
-    color: #767676;
-    text-decoration: none;
-}
-
-@mixin h3 {
-    font-size: 0.7rem;
-    font-family: $fontDisplay;
-    font-size: 12px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #767676;
-}
-
-@mixin label {
-    font-size: 0.9rem;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #212529;
-}
 
 * {
     margin: 0;
@@ -57,12 +18,23 @@ body {
     background-color: $lightGrey;
     width: 100%;
 
+    @include phone-only (599px) {
+        background-color: #FAFAFA;
+    }
+
+
+
+
     .top-bar {
         width: 100%;
         box-shadow: 0 7px 9px 0 rgba(240, 240, 240, 0.5);
         background-color: #fff;
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
+
+        @include phone-only (599px) {
+        }
 
         .logo {
             float: left;
@@ -71,6 +43,13 @@ body {
             margin-left: 2.06rem;
             margin-top: 1rem;
             margin-bottom: 1rem;
+
+            @include phone-only (599px) {
+                width: 44pt;
+                height: 13.8pt;
+                margin-left: 14pt;
+                margin-bottom: 2pt;
+            }
 
             img {
                 width: 100%;
@@ -82,17 +61,44 @@ body {
             align-items: center;
             margin-right: 0rem;
 
+            @include phone-only (599px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .mobile-heading {
+                display: none;
+                visibility: hidden;
+
+                @include phone-only (599px) {
+                    display: inline-block;
+                    visibility: visible;
+                    font-family: $fontDisplay;
+                    font-size: 2pt;
+                    color: #000000;
+                    margin-left: 14pt;
+                    margin-bottom: 5pt;
+                    font-weight: bolder;
+                }
+            }
+
             .notification {
                 a {
                     .bell-icon {
                         text-align: left;
                         font-size: 1.8rem;
-                        margin-right: 2rem;
+                        margin-right: -10rem;
                         margin-top: -0.35rem;
                         color: #767676;
                         text-decoration: none;
                         display: block;
                         overflow: hidden;
+
+                        @include phone-only (599px) {
+                            font-size: 1.5rem;
+                            margin-bottom: 9pt;
+                        }
                     }
                 }
 
@@ -104,6 +110,13 @@ body {
                     border: solid 1px #ffffff;
                     border-radius: 50%;
                     margin-left: 1rem;
+
+                    @include phone-only (599px) {
+                        margin-left: 4%;
+                        margin-bottom: 9pt;
+                        width: 8px;
+                        height: 8px;
+                    }
                 }
             }
 
@@ -114,12 +127,24 @@ body {
                 margin-right: -1rem;
                 margin-right: 0;
 
+                @include phone-only (599px) {
+                    margin-right: 0;
+                }
+
                 img {
                     width: 54px;
                     height: 54px;
                     float: left;
                     align-items: center;
                     margin-right: 1rem;
+
+                    @include phone-only (599px) {
+                        margin-right: 14pt;
+                        margin-bottom: 13pt;
+                        width: 38pt;
+                        height: 38pt;
+                        margin-left: -3rem;
+                    }
                 }
 
                 .dropbtn {
@@ -136,6 +161,10 @@ body {
                     color: #767676;
                     width: 9rem;
                     border: none;
+
+                    @include phone-only (599px) {
+                        display: none;
+                    }
                 }
 
                 .down-icon {
@@ -188,8 +217,21 @@ body {
         width: 65.8%;
         margin-top: 3%;
         margin-left: 15.5%;
+        margin-bottom: 5%;
+
+        @include phone-only (599px) {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
 
         .home {
+            @include phone-only (599px) {
+                display: none;
+            }
+
             h6 {
                 font-size: .9rem;
                 font-weight: normal;
@@ -199,6 +241,27 @@ body {
                 letter-spacing: 0.1px;
                 color: #767676;
                 margin: 0.1rem 0 0 0;
+            }
+        }
+
+        .form-btn {
+            @include phone-only (599px) {
+                display: block;
+                box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
+                width: 68px;
+                height: 38px;
+                border-radius: 18px;
+                background-color: #ffffff;
+                border: solid 1px #ededed;
+                position: relative;
+                cursor: pointer;
+                color: blue;
+                margin-top: 3%;
+
+                .filter-icon{
+                    margin-left: 1.3rem;
+                    margin-top: 0.4rem;
+                }
             }
         }
 
@@ -213,33 +276,84 @@ body {
                 color: #fff;
                 font-size: 0.8rem;
                 cursor: pointer;
+
+                @include phone-only (599px) {
+                    margin-right: 14pt;
+                    margin-left: 20pt;
+                    margin-top: 7%;
+                }
             }
         }
     }
 
     .main-modal {
-            .modal-footer {
-                .top-btn {
-                    width: 118px;
-                    height: 38px;
-                    border-radius: 18px;
-                    border: 1px solid #0648d5;
-                    background-color: #0648d5;
-                    box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
-                    color: #fff;
-                    font-size: 0.8rem;
-                    cursor: pointer;
+        .modal-footer {
+            .top-btn {
+                width: 118px;
+                height: 38px;
+                border-radius: 18px;
+                border: 1px solid #0648d5;
+                background-color: #0648d5;
+                box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
+                color: #fff;
+                font-size: 0.8rem;
+                cursor: pointer;
 
-                    &:first-child{
-                        width: 115px;
-                        background-color: #d0021b;
-                        border: #d0021b 1px solid;
-                    }
+                &:first-child {
+                    width: 115px;
+                    background-color: #d0021b;
+                    border: #d0021b 1px solid;
                 }
-
-
             }
         }
+    }
+
+    .table-hover{
+        display: none;
+
+        @include phone-only (599px) {
+            display: block;
+            background-color: #fff;
+            text-align: left;
+            width: 100%;
+            padding-left: 6px;
+
+            &:first-of-type{
+                padding-left: 1px;
+            }
+
+            thead{
+                th{
+                    font-size: 9.5pt;
+                    font-family: $fontDisplay;
+                    border-top: 0;
+                    border-bottom: 1px solid #fff;
+                    margin-top: 3rem;
+                    background-color: #FAFAFA;
+
+                    &:last-child{
+                        padding-left: 1.6rem;
+                    }
+                }      
+            }
+
+            tbody{
+                td{
+                    font-size: 10.4pt;
+                    color: #3F3F3F;
+
+                    // &:last-child{
+                    //     padding-left: 15px;
+                    // }
+
+                    .chevron-r{
+                        color: #767676;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+    }
+}
 
     .row {
         margin: 0;
@@ -249,6 +363,10 @@ body {
         #sidebar {
             background-color: $lightGrey;
             width: 14.92rem;
+
+            @include phone-only (599px) {
+                display: none;
+            }
 
             .sidebar-header {
                 h3 {
@@ -334,6 +452,10 @@ body {
             box-shadow: 0 2px 4px 0 rgba(184, 184, 184, 0.5);
             margin: 2rem auto 0 auto;
             height: auto;
+
+            @include phone-only (599px) {
+                display: none;
+            }
 
             .before-table {
                 display: flex;
@@ -434,6 +556,10 @@ body {
                 margin: 0.8rem 0 2rem 0;
                 height: auto;
 
+                @include phone-only (599px) {
+                    display: none;
+                }
+
                 thead {
                     tr {
                         th {
@@ -496,7 +622,6 @@ body {
                     .dropdown-item {
                         font-size: .9rem;
                         padding: 50rem;
-
                     }
                 }
             }
@@ -527,6 +652,9 @@ body {
             margin-left: 1rem;
             margin-right: 0.8rem;
             width: 15.8125rem;
+            @include phone-only (599px) {
+                display: none;
+            }
 
             .right-bar-header {
                 h3 {
@@ -599,6 +727,10 @@ body {
         padding: 1.5rem 0 0 0;
         color: grey;
         font-size: 0.8rem;
+
+        @include phone-only (599px) {
+            display: none;
+        }
     }
 
     .dataTables_wrapper {

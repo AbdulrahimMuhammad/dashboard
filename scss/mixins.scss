@@ -1,0 +1,45 @@
+@mixin menuIcons {
+    margin-right: 1rem;
+    width: 15px;
+    height: 15px; // background-color: #767676;
+}
+
+@mixin menuItems {
+    font-family: $fontDisplay;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    color: #767676;
+    text-decoration: none;
+}
+
+@mixin h3 {
+    font-size: 0.7rem;
+    font-family: $fontDisplay;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #767676;
+}
+
+@mixin label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #212529;
+}
+
+@mixin phone-only ($arg){
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
