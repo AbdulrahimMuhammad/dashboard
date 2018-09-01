@@ -10,7 +10,7 @@ body {
 .wrapper {
   background-color: #FAFAFA;
   width: 100%; }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 599px) and (min-width: 360px) {
     .wrapper {
       background-color: #FAFAFA;
       margin-right: 0; } }
@@ -24,14 +24,17 @@ body {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
-    @media screen and (max-width: 360px) {
+    justify-content: space-between;
+    position: relative; }
+    @media screen and (max-width: 599px) and (min-width: 360px) {
       .wrapper .top-bar {
         margin-right: 0;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column; } }
+        flex-direction: column;
+        -webkit-box-shadow: 0 2pt 4pt 0 #EDEDED;
+        box-shadow: 0 2pt 4pt 0 #EDEDED; } }
     .wrapper .top-bar .logo {
       float: left;
       width: 93px;
@@ -39,7 +42,7 @@ body {
       margin-left: 2.06rem;
       margin-top: 1rem;
       margin-bottom: 1rem; }
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 599px) and (min-width: 360px) {
         .wrapper .top-bar .logo {
           width: 44pt;
           height: 13.8pt;
@@ -55,7 +58,7 @@ body {
       -ms-flex-align: center;
       align-items: center;
       margin-right: 0rem; }
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 599px) and (min-width: 360px) {
         .wrapper .top-bar .user-info {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -69,7 +72,7 @@ body {
       .wrapper .top-bar .user-info .mobile-heading {
         display: none;
         visibility: hidden; }
-        @media screen and (max-width: 360px) {
+        @media screen and (max-width: 599px) and (min-width: 360px) {
           .wrapper .top-bar .user-info .mobile-heading {
             display: block;
             visibility: visible;
@@ -78,8 +81,8 @@ body {
             color: #000000;
             margin-left: 14pt;
             margin-right: 3rem;
-            margin-bottom: 5pt;
-            font-weight: bolder; } }
+            margin-bottom: 3pt;
+            font-weight: 900; } }
       .wrapper .top-bar .user-info .notification a .bell-icon {
         text-align: left;
         font-size: 1.8rem;
@@ -89,12 +92,13 @@ body {
         text-decoration: none;
         display: block;
         overflow: hidden; }
-        @media screen and (max-width: 360px) {
+        @media screen and (max-width: 599px) and (min-width: 360px) {
           .wrapper .top-bar .user-info .notification a .bell-icon {
             font-size: 1.5rem;
             margin-bottom: 9pt;
             text-decoration: none;
-            margin-right: 0px; } }
+            margin-right: 0px;
+            text-decoration: none; } }
       .wrapper .top-bar .user-info .notification .indicator {
         position: absolute;
         width: 9px;
@@ -102,7 +106,13 @@ body {
         background-color: #d0021b;
         border: solid 1px #ffffff;
         border-radius: 50%;
+        text-decoration: none;
         margin-left: 1rem; }
+        @media screen and (max-width: 599px) and (min-width: 360px) {
+          .wrapper .top-bar .user-info .notification .indicator {
+            margin-left: .8rem;
+            width: 8px;
+            height: 8px; } }
       .wrapper .top-bar .user-info .avatar {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -114,7 +124,7 @@ body {
         -ms-flex-align: center;
         align-items: center;
         margin-right: 0; }
-        @media screen and (max-width: 360px) {
+        @media screen and (max-width: 599px) and (min-width: 360px) {
           .wrapper .top-bar .user-info .avatar {
             margin-right: 14pt; } }
         .wrapper .top-bar .user-info .avatar img {
@@ -125,7 +135,7 @@ body {
           -ms-flex-align: center;
           align-items: center;
           margin-right: 1rem; }
-          @media screen and (max-width: 360px) {
+          @media screen and (max-width: 599px) and (min-width: 360px) {
             .wrapper .top-bar .user-info .avatar img {
               margin-bottom: 13pt;
               margin-right: 0px;
@@ -145,7 +155,7 @@ body {
           color: #767676;
           width: 9rem;
           border: none; }
-          @media screen and (max-width: 360px) {
+          @media screen and (max-width: 599px) and (min-width: 360px) {
             .wrapper .top-bar .user-info .avatar .dropbtn {
               display: none; } }
         .wrapper .top-bar .user-info .avatar .down-icon {
@@ -188,11 +198,11 @@ body {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     background-color: #FAFAFA;
-    width: 65.8%;
+    width: 66.9%;
     margin-top: 3%;
-    margin-left: 15.5%;
+    margin-left: 15.3%;
     margin-bottom: 0; }
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 599px) and (min-width: 360px) {
       .wrapper .above-content {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -203,7 +213,7 @@ body {
         width: 100%;
         margin-right: 0;
         margin-left: 0; } }
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 599px) and (min-width: 360px) {
       .wrapper .above-content .home {
         display: none; } }
     .wrapper .above-content .home h6 {
@@ -217,13 +227,13 @@ body {
       margin: 0.1rem 0 0 0; }
     .wrapper .above-content .form-btn {
       display: none; }
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 599px) and (min-width: 360px) {
         .wrapper .above-content .form-btn {
           display: block;
           -webkit-box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
           box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
-          width: 68px;
-          height: 38px;
+          width: 67px;
+          height: 37px;
           border-radius: 18px;
           background-color: #ffffff;
           border: solid 1px #ededed;
@@ -245,10 +255,10 @@ body {
       color: #fff;
       font-size: 0.8rem;
       cursor: pointer; }
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 599px) and (min-width: 360px) {
         .wrapper .above-content .btn-home .top-btn {
           margin-right: 10pt;
-          margin-left: 8pt;
+          margin-left: 9pt;
           margin-top: 7%; } }
   .wrapper .main-modal .modal-footer .top-btn {
     width: 118px;
@@ -267,12 +277,16 @@ body {
       border: #d0021b 1px solid; }
   .wrapper .table-hover {
     display: none; }
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 599px) and (min-width: 360px) {
       .wrapper .table-hover {
         display: block;
         background-color: #fff;
         text-align: left;
-        margin-right: 0; }
+        margin-top: 1rem;
+        margin-right: 0;
+        margin-bottom: 0;
+        -webkit-box-shadow: 0 7px 9px 0 rgba(240, 240, 240, 0.5);
+        box-shadow: 0 7px 9px 0 rgba(240, 240, 240, 0.5); }
         .wrapper .table-hover thead th {
           font-size: 9.5pt;
           font-family: "Open Sans", sans-serif;
@@ -294,6 +308,60 @@ body {
             color: #767676;
             font-size: 1.3rem;
             margin-left: 1.5rem; } }
+  .wrapper .phone-pagination {
+    display: none; }
+    @media screen and (max-width: 599px) and (min-width: 360px) {
+      .wrapper .phone-pagination {
+        display: block;
+        margin-left: 30%;
+        text-align: center;
+        margin-top: 6%; }
+        .wrapper .phone-pagination ul li a {
+          border: none;
+          background-color: inherit;
+          color: #767676;
+          font-size: 12pt;
+          font-family: "Open Sans", sans-serif;
+          padding: 3px 9px; }
+        .wrapper .phone-pagination .page-item.active .page-link {
+          border-radius: 6%;
+          padding: 3px 9px; } }
+  .wrapper .mobile-footer {
+    display: none; }
+    @media screen and (max-width: 599px) and (min-width: 360px) {
+      .wrapper .mobile-footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        color: #767676;
+        background-color: #fff;
+        -webkit-box-shadow: 0 -2pt 4pt 0 #E1E0E1;
+        box-shadow: 0 -2pt 4pt 0 #E1E0E1; }
+        .wrapper .mobile-footer .icon-item {
+          text-align: center;
+          font-size: 2rem; }
+          .wrapper .mobile-footer .icon-item .icon-info {
+            font-size: 9pt;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            text-align: center; }
+          .wrapper .mobile-footer .icon-item a {
+            text-decoration: none;
+            color: #767676; }
+            .wrapper .mobile-footer .icon-item a:active {
+              color: blue; }
+        .wrapper .mobile-footer .black-line {
+          color: black;
+          background-color: #000;
+          padding: .5rem;
+          text-align: center;
+          display: block;
+          width: 3rem; } }
   .wrapper .row {
     margin: 0;
     display: -webkit-box;
@@ -304,7 +372,7 @@ body {
     .wrapper .row #sidebar {
       background-color: #FAFAFA;
       width: 14.92rem; }
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 599px) and (min-width: 360px) {
         .wrapper .row #sidebar {
           display: none; } }
       .wrapper .row #sidebar .sidebar-header h3 {
@@ -379,13 +447,13 @@ body {
           font-weight: bold; }
     .wrapper .row .content {
       background-color: #fff;
-      width: 63.25rem;
+      width: 66rem;
       border: solid 1px #eeeeee;
       -webkit-box-shadow: 0 2px 4px 0 rgba(184, 184, 184, 0.5);
       box-shadow: 0 2px 4px 0 rgba(184, 184, 184, 0.5);
       margin: 2rem auto 0 auto;
       height: auto; }
-      @media screen and (max-width: 599px) {
+      @media screen and (max-width: 599px) and (min-width: 360px) {
         .wrapper .row .content {
           display: none; } }
       .wrapper .row .content .before-table {
@@ -472,12 +540,13 @@ body {
               margin-left: 1.4rem;
               margin-top: 0.6rem; }
       .wrapper .row .content .main-data {
-        font-size: 0.69rem;
+        font-size: 0.73rem;
+        font-stretch: expanded;
         font-style: "Open Sans", sans-serif;
         text-align: left;
         margin: 0.8rem 0 2rem 0;
         height: auto; }
-        @media screen and (max-width: 599px) {
+        @media screen and (max-width: 599px) and (min-width: 360px) {
           .wrapper .row .content .main-data {
             display: none; } }
         .wrapper .row .content .main-data thead tr th {
@@ -531,30 +600,13 @@ body {
           .wrapper .row .content .main-data tbody .dropdown-item {
             font-size: .9rem;
             padding: 0rem; }
-      .wrapper .row .content .main-pagination {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        text-align: center; }
-        .wrapper .row .content .main-pagination .pagination a {
-          border: none;
-          color: #767676; }
-          .wrapper .row .content .main-pagination .pagination a:hover {
-            background-color: #0648d5;
-            color: white; }
     .wrapper .row .right-bar {
       text-align: left;
       margin-top: 2rem;
       margin-left: 1rem;
-      margin-right: 0.8rem;
-      width: 15.8125rem; }
-      @media screen and (max-width: 599px) {
+      margin-right: 0.5rem;
+      width: 15.2rem; }
+      @media screen and (max-width: 599px) and (min-width: 360px) {
         .wrapper .row .right-bar {
           display: none; } }
       .wrapper .row .right-bar .right-bar-header h3 {
@@ -630,12 +682,18 @@ body {
     padding: 1.5rem 0 0 0;
     color: grey;
     font-size: 0.8rem; }
-    @media screen and (max-width: 599px) {
+    @media screen and (max-width: 599px) and (min-width: 360px) {
       .wrapper .copyright {
         display: none; } }
   .wrapper .dataTables_wrapper {
     margin-top: 2.5rem;
     font-size: 0.9rem; }
+  .wrapper .col-sm-12 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 6px;
+    padding-left: 6px; }
   .wrapper .page-item.active .page-link {
     z-index: 1;
     color: #fff;

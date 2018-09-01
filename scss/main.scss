@@ -18,7 +18,7 @@ body {
     background-color: $lightGrey;
     width: 100%;
 
-    @include phone-only (360px) {
+    @include mQ (599px, 360px){
         background-color: #FAFAFA;
         margin-right: 0;
     }
@@ -29,10 +29,12 @@ body {
         background-color: #fff;
         display: flex;
         justify-content: space-between;
+        position: relative;
 
-        @include phone-only (360px) {
+       @include mQ (599px, 360px){
             margin-right: 0;
             flex-direction: column;
+            box-shadow: 0 2pt 4pt 0 #EDEDED;
         }
 
         .logo {
@@ -43,7 +45,7 @@ body {
             margin-top: 1rem;
             margin-bottom: 1rem;
 
-            @include phone-only (360px) {
+            @include mQ (599px, 360px){
                 width: 44pt;
                 height: 13.8pt;
                 margin-left: 14pt;
@@ -60,7 +62,7 @@ body {
             align-items: center;
             margin-right: 0rem;
 
-            @include phone-only (360px) {
+            @include mQ (599px, 360px){
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -70,7 +72,7 @@ body {
                 display: none;
                 visibility: hidden;
 
-                @include phone-only (360px) {
+                @include mQ (599px, 360px){
                     display: block;
                     visibility: visible;
                     font-family: $fontDisplay;
@@ -78,8 +80,8 @@ body {
                     color: #000000;
                     margin-left: 14pt;
                     margin-right: 3rem;
-                    margin-bottom: 5pt;
-                    font-weight: bolder;
+                    margin-bottom: 3pt;
+                    font-weight: 900;
                 }
             }
 
@@ -95,34 +97,35 @@ body {
                         display: block;
                         overflow: hidden;
 
-                        @include phone-only (360px) {
+                        @include mQ (599px, 360px){
                             font-size: 1.5rem;
                             margin-bottom: 9pt;
                             text-decoration: none;
                             margin-right: 0px;
+                            text-decoration: none;
                         }
                     }
                 }
 
-                
-                    .indicator {
-                        position: absolute;
-                        width: 9px;
-                        height: 9px;
-                        background-color: #d0021b;
-                        border: solid 1px #ffffff;
-                        border-radius: 50%;
-                        margin-left: 1rem;
+                .indicator {
+                    position: absolute;
+                    width: 9px;
+                    height: 9px;
+                    background-color: #d0021b;
+                    border: solid 1px #ffffff;
+                    border-radius: 50%;
+                    text-decoration: none;
+                    margin-left: 1rem;
+
+                    @include mQ (599px, 360px){
+                        margin-left: .8rem;
+                        width: 8px;
+                        height: 8px; 
+
                     }
+                }
 
-                    // @include phone-only (360px) {
-                    //     margin-left: 4%;
-                    //     margin-bottom: 9pt;
-                    //     width: 8px;
-                    //     height: 8px;
-
-                    // }
-                
+               
             }
 
             .avatar {
@@ -131,7 +134,7 @@ body {
                 align-items: center;
                 margin-right: 0;
 
-                @include phone-only (360px) {
+                @include mQ (599px, 360px){
                     margin-right: 14pt;
                 }
 
@@ -142,7 +145,7 @@ body {
                     align-items: center;
                     margin-right: 1rem;
 
-                    @include phone-only (360px) {
+                    @include mQ (599px, 360px){
                         margin-bottom: 13pt;
                         margin-right: 0px;
                         width: 38pt;
@@ -165,7 +168,7 @@ body {
                     width: 9rem;
                     border: none;
 
-                    @include phone-only (360px) {
+                    @include mQ (599px, 360px){
                         display: none;
                     }
                 }
@@ -217,12 +220,12 @@ body {
         align-items: center;
         flex-wrap: nowrap;
         background-color: $lightGrey;
-        width: 65.8%;
+        width: 66.9%;
         margin-top: 3%;
-        margin-left: 15.5%;
+        margin-left: 15.3%;
         margin-bottom: 0;
 
-        @include phone-only (360px) {
+        @include mQ (599px, 360px){
             display: flex;
             justify-content: flex-end;
             width: 100%;
@@ -231,7 +234,7 @@ body {
         }
 
         .home {
-            @include phone-only (360px) {
+            @include mQ (599px, 360px){
                 display: none;
             }
 
@@ -250,11 +253,11 @@ body {
         .form-btn {
             display: none;
 
-            @include phone-only (360px) {
+            @include mQ (599px, 360px){
                 display: block;
                 box-shadow: 0 2px 4px 0 rgba(125, 125, 125, 0.5);
-                width: 68px;
-                height: 38px;
+                width: 67px;
+                height: 37px;
                 border-radius: 18px;
                 background-color: #ffffff;
                 border: solid 1px #ededed;
@@ -283,9 +286,9 @@ body {
                 font-size: 0.8rem;
                 cursor: pointer;
 
-                @include phone-only (360px) {
+                @include mQ (599px, 360px){
                     margin-right: 10pt;
-                    margin-left: 8pt;
+                    margin-left: 9pt;
                     margin-top: 7%;
                 }
             }
@@ -317,11 +320,14 @@ body {
     .table-hover {
         display: none;
 
-        @include phone-only (360px) {
+        @include mQ (599px, 360px){
             display: block;
             background-color: #fff;
             text-align: left;
+            margin-top: 1rem;
             margin-right: 0;
+            margin-bottom: 0;
+            box-shadow: 0 7px 9px 0 rgba(240, 240, 240, 0.5);
 
             &:first-of-type {
                 // padding-left: 1px;
@@ -365,6 +371,74 @@ body {
         }
     }
 
+    .phone-pagination {
+        display: none;
+
+        @include mQ (599px, 360px){
+            display: block;
+            margin-left: 30%;
+            text-align: center;
+            margin-top: 6%;
+            
+            ul li a{
+                border: none;
+                background-color: inherit;
+                color: #767676;
+                font-size: 12pt;
+                font-family: $fontDisplay;
+                padding: 3px 9px;
+                
+            }
+
+            .page-item.active .page-link{
+                border-radius: 6%;
+                padding: 3px 9px;
+            }
+        }
+    }
+
+        .mobile-footer{
+            display: none;
+            @include mQ (599px, 360px){
+                display: flex;
+                justify-content: space-around;
+                color: #767676;
+                background-color: #fff;
+                box-shadow: 0 -2pt 4pt 0 #E1E0E1;
+
+                .icon-item{
+                    text-align: center;
+                    font-size: 2rem;
+                    // border: 1px solid black;
+
+                    .icon-info{
+                        font-size: 9pt;
+                        display: flex;
+                        justify-content: space-around;
+                        text-align: center;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: #767676;
+
+                        &:active{
+                            color: blue;
+                        }
+                    }
+                }
+
+                .black-line{
+                    color: black;
+                    background-color: #000;
+                    padding: .5rem;
+                    text-align: center;
+                    display: block;
+                    width: 3rem;
+                }
+            }
+        }
+
     .row {
         margin: 0;
         display: flex;
@@ -374,7 +448,7 @@ body {
             background-color: $lightGrey;
             width: 14.92rem;
 
-            @include phone-only (360px) {
+            @include mQ (599px, 360px){
                 display: none;
             }
 
@@ -457,13 +531,13 @@ body {
 
         .content {
             background-color: #fff;
-            width: 63.25rem;
+            width: 66rem;
             border: solid 1px #eeeeee;
             box-shadow: 0 2px 4px 0 rgba(184, 184, 184, 0.5);
             margin: 2rem auto 0 auto;
             height: auto;
 
-            @include phone-only (599px) {
+            @include mQ (599px, 360px){
                 display: none;
             }
 
@@ -560,13 +634,14 @@ body {
             }
 
             .main-data {
-                font-size: 0.69rem;
+                font-size: 0.73rem;
+                font-stretch: expanded;
                 font-style: $fontDisplay;
                 text-align: left;
                 margin: 0.8rem 0 2rem 0;
                 height: auto;
 
-                @include phone-only (599px) {
+                @include mQ (599px, 360px){
                     display: none;
                 }
 
@@ -635,35 +710,17 @@ body {
                     }
                 }
             }
+    }
 
-            .main-pagination {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-
-                .pagination {
-                    a {
-                        border: none;
-                        color: #767676;
-
-                        &:hover {
-                            background-color: #0648d5;
-                            color: white;
-                        }
-                    }
-                }
-            }
-        }
-
+    
         .right-bar {
             text-align: left;
             margin-top: 2rem;
             margin-left: 1rem;
-            margin-right: 0.8rem;
-            width: 15.8125rem;
+            margin-right: 0.5rem;
+            width: 15.2rem;
 
-            @include phone-only (599px) {
+            @include mQ (599px, 360px){
                 display: none;
             }
 
@@ -739,7 +796,7 @@ body {
         color: grey;
         font-size: 0.8rem;
 
-        @include phone-only (599px) {
+        @include mQ (599px, 360px){
             display: none;
         }
     }
@@ -747,6 +804,14 @@ body {
     .dataTables_wrapper {
         margin-top: 2.5rem;
         font-size: 0.9rem;
+    }
+
+    .col-sm-12{
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 6px;
+        padding-left: 6px;
     }
 
     .page-item.active .page-link {
