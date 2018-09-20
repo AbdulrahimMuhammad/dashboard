@@ -1,0 +1,104 @@
+body{
+    background-color: ##D7D7D7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-section{
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 0px;
+}
+
+.modal-content{
+    border-radius: 0;
+    border: 1px solid #E6E6E6;
+}
+
+.logo{
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: #F8F8F8;
+    padding: 2rem;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.form-group{
+    margin-bottom: 25px;
+}
+
+.form-group input{
+    height: 35px;
+    border: 1px solid grey;
+    font-size: 14px;
+    border-radius: 0;
+    background-color: #FAFFBD;
+}
+
+.form-group input:focus{
+    height: 35px;
+    border: 1px solid grey;
+    font-size: 14px;
+    border-radius: 0;
+    background-color: #FAFFBD;
+}
+
+.form-group input:first-child{
+    margin-bottom: 2rem;
+}
+
+.form-group .user-icon{
+    margin-top: -3.5rem;
+    margin-left: 9rem;
+    position: absolute;
+    font-size: 13px;
+    color: #A2A2A2;    
+}
+
+.btn-box{
+    padding: 1.5rem;
+    border-top: 1px solid rgba(0,0,0,.1);
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+.btn-box .btn{
+    padding: 0.2rem 1.5rem;
+    background-color: #0129BF;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #286090;
+}
+
+.forgot{
+    float: left;
+    margin-top: -1.6rem;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+.forgot:hover{
+    text-decoration: none;
+    color: blue;
+}
+
+.footer{
+    margin-top: 9.2rem;
+    background-color: #fff;
+    border-top: #f8f8f8;
+    padding: 1rem;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.footer .footer-content{
+    font-size: 13px;
+    margin-left: 14rem;
+}
